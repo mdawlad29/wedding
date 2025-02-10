@@ -33,7 +33,9 @@ export default function RootLayout({
       >
         <PageRender>
           <Header />
-          <main className="min-h-screen">{children}</main>
+          <main className="min-h-screen md:px-4 px-1 md:py-5 py-2">
+            {children}
+          </main>
           <Footer />
         </PageRender>
       </body>

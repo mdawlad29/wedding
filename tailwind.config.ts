@@ -9,21 +9,21 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        primary: "#0597f2",
+        primary: "#FF9A00",
         secondary: "#f2a705",
-        accent: "#f2a705",
+        accent: "#000",
         neutral: "#fff",
       },
       textColor: {
-        primary: "#0597f2",
+        primary: "#FF9A00",
         secondary: "#f2a705",
-        accent: "#f2a705",
+        accent: "#000",
         neutral: "#fff",
       },
       borderColor: {
-        primary: "#0597f2",
+        primary: "#FF9A00",
         secondary: "#f2a705",
-        accent: "#f2a705",
+        accent: "#000",
         neutral: "#fff",
       },
     },
