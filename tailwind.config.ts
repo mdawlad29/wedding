@@ -8,9 +8,23 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundColor: {
+        primary: "#0597f2",
+        secondary: "#f2a705",
+        accent: "#f2a705",
+        neutral: "#fff",
+      },
+      textColor: {
+        primary: "#0597f2",
+        secondary: "#f2a705",
+        accent: "#f2a705",
+        neutral: "#fff",
+      },
+      borderColor: {
+        primary: "#0597f2",
+        secondary: "#f2a705",
+        accent: "#f2a705",
+        neutral: "#fff",
       },
     },
   },

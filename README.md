@@ -1,1 +1,1 @@
-### Wedding application
+### Wedding Application
