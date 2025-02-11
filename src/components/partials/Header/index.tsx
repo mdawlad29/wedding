@@ -19,7 +19,7 @@ const Header = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, []);
