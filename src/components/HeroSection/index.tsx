@@ -7,14 +7,14 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <section className="absolute inset-0 flex flex-col items-center justify-center mt-24">
+    <section className="absolute inset-0 flex flex-col items-center justify-center md:mt-24 mt-12">
       <motion.div
         initial={{ x: "100vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-        className="mb-4"
+        className="md:mb-4 mb-2"
       >
-        <Typography.Text className="text-primary italic text-3xl leading-[44px] text-center">
+        <Typography.Text className="text-primary italic md:text-3xl text-lg leading-[44px] text-center">
           Welcome To Bikaner Marwadi Caterers
         </Typography.Text>
       </motion.div>
@@ -27,7 +27,7 @@ const HeroSection = () => {
       >
         <Typography.Title
           level={1}
-          className="!text-neutral !text-5xl text-center leading-[64px] !m-0 !mb-12"
+          className="!text-neutral md:!text-5xl !text-2xl text-center leading-[64px] !m-0 md:!mb-12 !mb-6"
         >
           We Deliver High Quality Food <br /> Catering For Your Event
         </Typography.Title>
@@ -40,11 +40,11 @@ const HeroSection = () => {
         </Link>
       </motion.div>
 
-      <Flex align="center" justify="center" gap={18} className="mt-16">
+      <Flex align="center" justify="center" gap={18} className="lg:mt-16 mt-10">
         <Link
           href={""}
           target="_blank"
-          className="w-8 h-8 flex justify-center items-center rounded-md text-xl bg-neutral !text-primary duration-500 ease-in-out transform hover:scale-110"
+          className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-neutral !text-primary duration-500 ease-in-out transform hover:scale-110"
         >
           <FaFacebookF />
         </Link>
@@ -52,7 +52,7 @@ const HeroSection = () => {
         <Link
           href={""}
           target="_blank"
-          className="w-8 h-8 flex justify-center items-center rounded-md text-xl bg-neutral !text-primary duration-500 ease-in-out transform hover:scale-110"
+          className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-neutral !text-primary duration-500 ease-in-out transform hover:scale-110"
         >
           <FaInstagram />
         </Link>

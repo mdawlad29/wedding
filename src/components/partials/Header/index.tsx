@@ -25,7 +25,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="relative h-screen w-full overflow-hidden">
+    <header className="relative md:h-[140vh] h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         {images.map((img, index) => (

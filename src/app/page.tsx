@@ -1,3 +1,9 @@
+import AboutPage from "./about/page";
+
 export default function Home() {
-  return <div>ddd</div>;
+  return (
+    <div>
+      <AboutPage />
+    </div>
+  );
 }
