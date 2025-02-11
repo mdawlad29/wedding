@@ -9,18 +9,18 @@ const ResponsiveHeader = () => {
   const [isOpenSidebar, setOpenSidebar] = useState(false);
 
   return (
-    <nav className="py-3 px-4 lg:hidden block z-50">
+    <nav className="py-3 px-4 lg:hidden block fixed w-full inset-0 z-50">
       <div className="flex justify-between items-center">
         <Image
           src="/assets/images/logo.png"
           alt="logo"
-          width={60}
-          height={60}
+          width={80}
+          height={80}
         />
 
         <MdMenu
           onClick={() => setOpenSidebar(true)}
-          className="cursor-pointer text-2xl text-neutral"
+          className="cursor-pointer text-3xl text-neutral"
         />
 
         {/* Sidebar Menu */}
@@ -33,13 +33,13 @@ const ResponsiveHeader = () => {
             <Image
               src="/assets/images/logo.png"
               alt="logo"
-              width={60}
-              height={60}
+              width={80}
+              height={80}
             />
 
             <MdClose
               onClick={() => setOpenSidebar(false)}
-              className="cursor-pointer text-2xl text-accent"
+              className="cursor-pointer text-3xl text-accent"
             />
           </Flex>
 
@@ -49,7 +49,7 @@ const ResponsiveHeader = () => {
               <Link
                 key={menu.name}
                 href={`${menu.link}`}
-                className="block text-base text-accent hover:text-primary uppercase duration-300 py-2"
+                className="block text-base text-accent hover:text-primary uppercase duration-200 py-2"
                 onClick={() => setOpenSidebar(false)}
               >
                 {menu.name}
