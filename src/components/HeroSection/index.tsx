@@ -57,6 +57,8 @@ const HeroSection = () => {
           <FaInstagram />
         </Link>
       </Flex>
+
+      <div className="absolute bottom-0 bg-neutral h-20 rounded-t-[50%] w-full" />
     </section>
   );
 };

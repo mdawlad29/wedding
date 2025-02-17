@@ -2,13 +2,12 @@
 import { Col, Flex, Row, Typography } from "antd";
 import Image from "next/image";
 import React from "react";
-import SectionHeading from "../shared/SectionHeading";
 import { FaCheck } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="relative md:-mt-20 lg:-mt-24 -mt-10 lg:mx-28 md:mx-7 mx-4 shadow-xl overflow-hidden">
+    <section className="relative md:-mt-20 lg:-mt-[8rem] -mt-10 lg:mx-28 md:mx-7 mx-4 shadow-xl overflow-hidden">
       <motion.div
         initial={{ y: "50vw", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -23,16 +22,22 @@ const About = () => {
               alt={"about-image"}
               width={300}
               height={300}
-              className={"w-full lg:h-[650px] h-[300px] object-cover"}
+              className={"w-full lg:h-[600px] h-[300px] object-cover"}
             />
           </Col>
 
           <Col xs={24} lg={12}>
             <div className="lg:p-8 p-4">
-              <SectionHeading
-                title="about"
-                subTitle="Welcome To The Best Catering Company"
-              />
+              <Typography.Text className="block italic text-3xl text-primary leading-8 font-normal capitalize !mb-3">
+                about
+              </Typography.Text>
+
+              <Typography.Title
+                level={3}
+                className="md:!text-4xl !text-2xl font-semibold leading-[43px] !text-gray-800 capitalize !m-0"
+              >
+                Welcome To The Best <br /> Catering Company
+              </Typography.Title>
 
               <p className="text-justify text-base leading-[24px] text-gray-700 md:my-5 my-6">
                 Bikaner Marwadi Caterers is a renowned catering service company
