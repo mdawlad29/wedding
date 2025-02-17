@@ -42,7 +42,7 @@ const Responsibility = () => {
   }, [isInView]);
 
   return (
-    <section className="relative md:mt-14 lg:mt-24 mt-10 lg:mx-28 md:mx-7 mx-1">
+    <section className="relative md:mt-14 lg:mt-24 mt-10 lg:mx-28 md:mx-7 mx-4">
       <Row gutter={[40, 40]}>
         <Col xs={24} md={24} lg={12}>
           <Flex gap={30}>

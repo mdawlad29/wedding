@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "../scss/main.scss";
+import "./global.css";
 import PageRender from "./PageRender";
 import Header from "@/components/partials/Header";
 import Footer from "@/components/partials/Footer";
@@ -33,9 +33,8 @@ export default function RootLayout({
       >
         <PageRender>
           <Header />
-          <main className="min-h-screen md:px-5 px-2 md:py-5 py-2">
-            {children}
-          </main>
+          {/* md:px-5 px-2 md:py-5 py-2 */}
+          <main className="min-h-screen">{children}</main>
           <Footer />
         </PageRender>
       </body>

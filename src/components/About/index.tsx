@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="relative md:-mt-20 lg:-mt-24 -mt-10 lg:mx-28 md:mx-7 mx-1 shadow-xl overflow-hidden">
+    <section className="relative md:-mt-20 lg:-mt-24 -mt-10 lg:mx-28 md:mx-7 mx-4 shadow-xl overflow-hidden">
       <motion.div
         initial={{ y: "50vw", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
