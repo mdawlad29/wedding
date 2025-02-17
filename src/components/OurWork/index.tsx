@@ -39,8 +39,8 @@ const OurWork = () => {
       {/* Steps */}
       <motion.div
         ref={ref}
-        initial={{ y: "20vh" }}
-        animate={isInView ? { y: 0, opacity: 1 } : { y: "20vw", opacity: 0 }}
+        initial={{ y: "10vh" }}
+        animate={isInView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
         transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
         className="container mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10"
       >
@@ -55,7 +55,7 @@ const OurWork = () => {
             </div>
 
             {/* Icon Box */}
-            <div className="border border-primary duration-500 ease-in-out p-6 w-[8rem] h-[9rem] group-hover:bg-primary flex justify-center items-center flex-col relative mt-6">
+            <div className="border-[3px] border-primary duration-500 ease-in-out p-6 w-[8rem] h-[9rem] group-hover:bg-primary flex justify-center items-center flex-col relative mt-6">
               <IoIosRestaurant className="text-primary group-hover:text-neutral duration-500 ease-in-out text-5xl" />
             </div>
 

@@ -1,16 +1,19 @@
 "use client";
 import { Col, Flex, Row, Typography } from "antd";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import { FaCheck } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
   return (
     <section className="relative md:-mt-20 lg:-mt-[8rem] -mt-10 lg:mx-28 md:mx-7 mx-4 shadow-xl overflow-hidden">
       <motion.div
-        initial={{ y: "50vw", opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        ref={ref}
+        initial={{ y: "20vw" }}
+        animate={isInView ? { y: 0, opacity: 1 } : { y: "20vw", opacity: 0 }}
         transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
       >
         <div className="absolute inset-0 bg-neutral" />
