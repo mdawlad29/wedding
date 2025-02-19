@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Events from "@/components/Events";
 import OurWork from "@/components/OurWork";
 import Responsibility from "@/components/Responsibility";
 import Services from "@/components/Services";
@@ -14,6 +15,7 @@ export default function Home() {
       <OurWork />
       <SweetMemory />
       <Testimonial />
+      <Events />
     </div>
   );
 }

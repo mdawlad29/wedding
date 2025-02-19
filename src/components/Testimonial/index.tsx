@@ -15,7 +15,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="my-20">
+    <section className="mt-20">
       <Row gutter={[20, 20]}>
         <Col xs={24} md={24} lg={6}>
           <Image

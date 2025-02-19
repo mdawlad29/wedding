@@ -94,7 +94,7 @@ const SweetMemory = () => {
           <div className="text-center w-48 py-4 hover:bg-accent hover:-translate-y-2 duration-300 ease-in-out group bg-primary">
             <Link
               href={""}
-              className="!text-neutral group:hover:!text-primary text-xl capitalize font-semibold"
+              className="!text-neutral text-xl capitalize font-semibold"
             >
               get in touch
             </Link>
@@ -110,7 +110,7 @@ const SweetMemory = () => {
                 alt="Slide-image"
                 width={500}
                 height={500}
-                className="object-cover md:h-[300px] h-[200px]"
+                className="object-cover md:h-[300px] lg:h-full h-[200px]"
               />
             ))}
           </Slider>
