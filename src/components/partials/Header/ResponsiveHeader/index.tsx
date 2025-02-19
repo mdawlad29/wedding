@@ -20,7 +20,7 @@ const ResponsiveHeader = () => {
 
         <MdMenu
           onClick={() => setOpenSidebar(true)}
-          className="cursor-pointer text-3xl text-neutral"
+          className="cursor-pointer text-3xl text-primary"
         />
 
         {/* Sidebar Menu */}
@@ -39,7 +39,7 @@ const ResponsiveHeader = () => {
 
             <MdClose
               onClick={() => setOpenSidebar(false)}
-              className="cursor-pointer text-3xl text-accent"
+              className="cursor-pointer text-3xl text-primary"
             />
           </Flex>
 

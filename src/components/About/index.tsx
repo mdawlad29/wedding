@@ -3,6 +3,12 @@ import { Col, Flex, Row, Typography } from "antd";
 import Image from "next/image";
 import React from "react";
 import { FaCheck } from "react-icons/fa";
+import { Great_Vibes } from "next/font/google";
+
+const greatVibes = Great_Vibes({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const About = () => {
   return (
@@ -23,7 +29,9 @@ const About = () => {
 
           <Col xs={24} lg={12}>
             <div className="lg:p-8 p-4">
-              <Typography.Text className="block italic text-3xl text-primary leading-8 font-normal capitalize !mb-3">
+              <Typography.Text
+                className={`block ${greatVibes.className} text-4xl text-primary leading-8 font-normal capitalize !mb-3`}
+              >
                 about
               </Typography.Text>
 

@@ -3,6 +3,12 @@ import { Col, Rate, Row, Typography } from "antd";
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
+import { Great_Vibes } from "next/font/google";
+
+const greatVibes = Great_Vibes({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const Testimonial = () => {
   const settings = {
@@ -30,8 +36,10 @@ const Testimonial = () => {
         <Col xs={24} md={24} lg={12}>
           <div className="flex flex-col justify-center items-center h-full bg-gray-100 text-center md:py-10 py-5 px-5">
             <div>
-              <span className="italic text-primary text-xl font-normal mb-4 block">
-                Our Work
+              <span
+                className={`${greatVibes.className} text-primary text-3xl font-normal mb-4 block capitalize`}
+              >
+                testimonial
               </span>
 
               <Typography.Title

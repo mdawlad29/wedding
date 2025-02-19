@@ -3,6 +3,12 @@ import Image from "next/image";
 import { IoIosRestaurant } from "react-icons/io";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Great_Vibes } from "next/font/google";
+
+const greatVibes = Great_Vibes({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const OurWork = () => {
   const ref = useRef(null);
@@ -20,7 +26,9 @@ const OurWork = () => {
           className="opacity-80"
         />
         <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white px-4">
-          <span className="italic text-primary text-xl font-normal">
+          <span
+            className={`${greatVibes.className} text-primary text-3xl font-normal`}
+          >
             Our Work
           </span>
 

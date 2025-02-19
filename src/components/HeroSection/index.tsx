@@ -4,6 +4,12 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { Great_Vibes } from "next/font/google";
+
+const greatVibes = Great_Vibes({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const HeroSection = () => {
   return (
@@ -14,7 +20,9 @@ const HeroSection = () => {
         transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
         className="md:mb-4 mb-2"
       >
-        <Typography.Text className="text-primary italic md:text-3xl text-lg leading-[44px] text-center">
+        <Typography.Text
+          className={`${greatVibes.className} text-primary italic md:text-5xl text-xl leading-[44px] text-center`}
+        >
           Welcome To Bikaner Marwadi Caterers
         </Typography.Text>
       </motion.div>

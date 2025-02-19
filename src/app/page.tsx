@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Blog from "@/components/Blog";
 import Events from "@/components/Events";
 import OurWork from "@/components/OurWork";
 import Responsibility from "@/components/Responsibility";
@@ -16,6 +17,7 @@ export default function Home() {
       <SweetMemory />
       <Testimonial />
       <Events />
+      <Blog />
     </div>
   );
 }
