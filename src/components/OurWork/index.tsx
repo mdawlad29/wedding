@@ -3,10 +3,12 @@ import Image from "next/image";
 import { IoIosRestaurant } from "react-icons/io";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import SweetMemory from "../SweetMemory";
 
 const OurWork = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
+
   return (
     <section className="relative bg-gray-100 text-center pb-16">
       {/* Background Image with Overlay */}
@@ -69,6 +71,9 @@ const OurWork = () => {
           </div>
         ))}
       </motion.div>
+
+      {/*<-- Sweet Memory --->*/}
+      <SweetMemory />
     </section>
   );
 };
