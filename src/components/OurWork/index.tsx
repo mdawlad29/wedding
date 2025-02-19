@@ -3,14 +3,13 @@ import Image from "next/image";
 import { IoIosRestaurant } from "react-icons/io";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import SweetMemory from "../SweetMemory";
 
 const OurWork = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
 
   return (
-    <section className="relative bg-gray-100 text-center pb-16">
+    <section className="relative bg-neutral text-center pb-16">
       {/* Background Image with Overlay */}
       <div className="relative h-[340px] md:h-[400px] lg:h-[500px] overflow-hidden">
         <Image
@@ -21,7 +20,9 @@ const OurWork = () => {
           className="opacity-80"
         />
         <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white px-4">
-          <p className="italic text-primary text-xl font-normal">Our Work</p>
+          <span className="italic text-primary text-xl font-normal">
+            Our Work
+          </span>
 
           <h2 className="text-3xl md:text-4xl font-medium my-3">
             Our Working Process
@@ -36,7 +37,7 @@ const OurWork = () => {
       </div>
 
       {/* Curved Bottom */}
-      <div className="w-full h-20 bg-gray-100 relative -mt-16 rounded-t-[50%]" />
+      <div className="w-full h-20 bg-neutral relative -mt-16 rounded-t-[50%]" />
 
       {/* Steps */}
       <motion.div
@@ -71,9 +72,6 @@ const OurWork = () => {
           </div>
         ))}
       </motion.div>
-
-      {/*<-- Sweet Memory --->*/}
-      <SweetMemory />
     </section>
   );
 };

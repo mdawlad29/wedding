@@ -1,8 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import Slider, { Settings } from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import { Col, Flex, Row, Typography } from "antd";
 import Link from "next/link";
@@ -56,7 +54,7 @@ const SweetMemory = () => {
   };
 
   return (
-    <div className="lg:mx-28 md:mx-7 mx-4 md:mt-14 lg:mt-32 mt-12">
+    <section className="lg:mx-28 md:mx-7 mx-4 md:mt-14 lg:mt-32 my-12">
       <Row gutter={[30, 30]}>
         <Col xs={24} md={24} lg={12}>
           <Flex gap={30}>
@@ -104,23 +102,21 @@ const SweetMemory = () => {
         </Col>
 
         <Col xs={24} md={24} lg={12}>
-          <div className="slider-container">
-            <Slider ref={sliderRef} {...settings}>
-              {imageData.map((img) => (
-                <Image
-                  key={img?.id}
-                  src={img?.image}
-                  alt="Slide-image"
-                  width={500}
-                  height={500}
-                  className="object-cover"
-                />
-              ))}
-            </Slider>
-          </div>
+          <Slider ref={sliderRef} {...settings}>
+            {imageData.map((img) => (
+              <Image
+                key={img?.id}
+                src={img?.image}
+                alt="Slide-image"
+                width={500}
+                height={500}
+                className="object-cover md:h-[300px] h-[200px]"
+              />
+            ))}
+          </Slider>
         </Col>
       </Row>
-    </div>
+    </section>
   );
 };
 

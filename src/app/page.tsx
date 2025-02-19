@@ -2,6 +2,8 @@ import About from "@/components/About";
 import OurWork from "@/components/OurWork";
 import Responsibility from "@/components/Responsibility";
 import Services from "@/components/Services";
+import SweetMemory from "@/components/SweetMemory";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <Responsibility />
       <Services />
       <OurWork />
+      <SweetMemory />
+      <Testimonial />
     </div>
   );
 }
