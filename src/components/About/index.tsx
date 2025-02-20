@@ -12,7 +12,7 @@ const greatVibes = Great_Vibes({
 
 const About = () => {
   return (
-    <section className="relative md:-mt-20 lg:-mt-[8rem] -mt-10 lg:mx-28 md:mx-7 mx-4 shadow-xl overflow-hidden">
+    <section className="relative md:-mt-20 lg:-mt-[8rem] -mt-10 lg:mx-28 md:mx-7 mx-4 z-20 shadow-xl overflow-hidden">
       <div>
         <div className="absolute inset-0 bg-neutral" />
 

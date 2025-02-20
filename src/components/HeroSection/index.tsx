@@ -5,6 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Great_Vibes } from "next/font/google";
+import Curve from "../shared/Curve";
 
 const greatVibes = Great_Vibes({
   weight: "400",
@@ -66,7 +67,7 @@ const HeroSection = () => {
         </Link>
       </Flex>
 
-      <div className="absolute bottom-0 bg-neutral h-20 rounded-t-[50%] w-full" />
+      <Curve />
     </section>
   );
 };

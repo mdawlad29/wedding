@@ -4,6 +4,7 @@ import { IoIosRestaurant } from "react-icons/io";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Great_Vibes } from "next/font/google";
+import Curve from "../shared/Curve";
 
 const greatVibes = Great_Vibes({
   weight: "400",
@@ -17,7 +18,7 @@ const OurWork = () => {
   return (
     <section className="relative bg-neutral text-center pb-16">
       {/* Background Image with Overlay */}
-      <div className="relative h-[340px] md:h-[400px] lg:h-[500px] overflow-hidden">
+      <div className="relative h-[270px] md:h-[430px] overflow-hidden">
         <Image
           src="/assets/images/our-work-bg.jpg"
           alt="Catering Background"
@@ -42,18 +43,17 @@ const OurWork = () => {
             seamless success with Bikaner Marwadi Caterers.
           </p>
         </div>
-      </div>
 
-      {/* Curved Bottom */}
-      <div className="w-full h-20 bg-neutral relative -mt-16 rounded-t-[50%]" />
+        <Curve />
+      </div>
 
       {/* Steps */}
       <motion.div
         ref={ref}
-        initial={{ y: "10vh" }}
-        animate={isInView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
+        initial={{ y: "7vw" }}
+        animate={isInView ? { y: 0, opacity: 1 } : { y: "7vw", opacity: 0 }}
         transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-        className="container mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10"
+        className="container mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10 mt-16"
       >
         {steps.map((step, index) => (
           <div

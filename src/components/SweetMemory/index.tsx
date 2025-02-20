@@ -54,7 +54,7 @@ const SweetMemory = () => {
   };
 
   return (
-    <section className="lg:mx-28 md:mx-7 mx-4 md:mt-14 lg:mt-32 my-12">
+    <section className="lg:mx-28 md:mx-7 mx-4 md:mt-16 my-12">
       <Row gutter={[30, 30]}>
         <Col xs={24} md={24} lg={12}>
           <Flex gap={30}>

@@ -1,10 +1,21 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import Curve from "../shared/Curve";
 
 const Events = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="relative w-full h-[500px] overflow-hidden">
+    <motion.div
+      ref={ref}
+      initial={{ y: "7vw", opacity: 0 }}
+      animate={isInView ? { y: 0, opacity: 1 } : { y: "7vw", opacity: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      className="relative w-full h-[450px] overflow-hidden"
+    >
       {/* Video Background */}
       <video
         src="/assets/video/event-video.mp4"
@@ -15,7 +26,7 @@ const Events = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-85 flex flex-col justify-center items-center text-center px-4">
+      <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center px-4">
         <h2 className="text-neutral text-2xl md:text-4xl font-bold mb-10">
           Ready To Book The Catering For Your Special Event?
         </h2>
@@ -30,8 +41,8 @@ const Events = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 bg-neutral h-20 rounded-t-[50%] w-full" />
-    </div>
+      <Curve />
+    </motion.div>
   );
 };
 

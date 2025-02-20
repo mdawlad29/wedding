@@ -13,7 +13,7 @@ const greatVibes = Great_Vibes({
 
 const Blog = () => {
   return (
-    <section className="lg:mx-28 md:mx-7 mx-4 mt-7 lg:mb-32 md:mb-20 mb-16">
+    <section className="lg:mx-28 md:mx-7 mx-4 mt-7 lg:my-20 md:my-20 my-16">
       <div className="text-center mb-16">
         <Typography.Text
           className={`block ${greatVibes.className} text-3xl text-primary leading-8 font-normal capitalize !mb-3`}
