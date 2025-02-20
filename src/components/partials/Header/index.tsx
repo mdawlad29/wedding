@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { headerMenus } from "./HeaderMenus";
 import ResponsiveHeader from "./ResponsiveHeader";
 import HeroSection from "@/components/HeroSection";
+import { usePathname } from "next/navigation";
 
 const images = [
   "/assets/images/hero/hero.jpg",
@@ -13,7 +14,11 @@ const images = [
   "/assets/images/hero/hero-3.jpg",
 ];
 
+const galleryImage = "/assets/images/gallery/image-1.jpg"; // Set the gallery image path here
+
 const Header = () => {
+  const pathname = usePathname();
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -28,17 +33,26 @@ const Header = () => {
     <header className="relative md:h-[140vh] h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        {images.map((img, index) => (
+        {pathname === "/gallery" ? (
           <div
-            key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-all duration-[5000ms] ease-in-out ${
-              index === activeIndex
-                ? "opacity-100 scale-110"
-                : "opacity-0 scale-100"
-            }`}
-            style={{ backgroundImage: `url(${img})` }}
+            className="absolute inset-0 bg-cover bg-center opacity-100"
+            style={{
+              backgroundImage: `url(${galleryImage})`,
+            }}
           />
-        ))}
+        ) : (
+          images.map((img, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 bg-cover bg-center transition-all duration-[5000ms] ease-in-out ${
+                index === activeIndex
+                  ? "opacity-100 scale-110"
+                  : "opacity-0 scale-100"
+              }`}
+              style={{ backgroundImage: `url(${img})` }}
+            />
+          ))
+        )}
       </div>
 
       {/* Overlay */}
