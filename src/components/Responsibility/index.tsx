@@ -1,46 +1,19 @@
 "use client";
 
+import React from "react";
 import { Col, Flex, Row, Typography } from "antd";
-import React, { useEffect, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { FaQuoteLeft } from "react-icons/fa";
 import Experience from "./Experience";
 import ComponentLayout from "../shared/ComponentLayout";
+import ProgressBar from "../shared/Progressbar";
 
 const Responsibility = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-  const [progress1, setProgress1] = useState(0);
-  const [progress2, setProgress2] = useState(0);
-
-  useEffect(() => {
-    if (isInView) {
-      setProgress1(0);
-      setProgress2(0);
-
-      let count1 = 0;
-      let count2 = 0;
-      const interval1 = setInterval(() => {
-        if (count1 >= 90) {
-          clearInterval(interval1);
-        } else {
-          count1++;
-          setProgress1(count1);
-        }
-      }, 10);
-
-      const interval2 = setInterval(() => {
-        if (count2 >= 75) {
-          clearInterval(interval2);
-        } else {
-          count2++;
-          setProgress2(count2);
-        }
-      }, 10);
-    }
-  }, [isInView]);
+  const skillsData = [
+    { name: "quality food", target: 92 },
+    { name: "various menus", target: 90 },
+  ];
 
   return (
     <ComponentLayout>
@@ -67,42 +40,7 @@ const Responsibility = () => {
             architects, and your trusted partner in creating memories.
           </p>
 
-          <div ref={ref} className="mb-8">
-            {[...Array(2)]?.map((item, index) => (
-              <div key={index} className="mb-3">
-                <Flex align="center" justify="space-between" className="mb-2">
-                  <Typography.Text className="text-[16px] font-medium !text-accent capitalize">
-                    {index === 0 ? "Quality Food" : "various menus"}
-                  </Typography.Text>
-
-                  <motion.div
-                    className="text-[16px] text-[#585858]"
-                    initial={{ opacity: 0 }}
-                    animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-                    transition={{ duration: 1, delay: 0.3 }}
-                  >
-                    {index === 0 ? progress1 : progress2}%
-                  </motion.div>
-                </Flex>
-
-                <div className="relative w-full h-3 bg-gray-200 overflow-hidden">
-                  <motion.div
-                    className="h-full bg-primary"
-                    style={{
-                      width: `${index === 0 ? progress1 : progress2}%`,
-                    }}
-                    initial={{ width: "0%" }}
-                    animate={
-                      isInView
-                        ? { width: index === 0 ? "90%" : "75%" }
-                        : { width: "0%" }
-                    }
-                    transition={{ duration: 1, ease: "easeOut" }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProgressBar skills={skillsData} />
 
           <div className="text-center w-48 py-4 hover:bg-accent hover:-translate-y-2 duration-300 ease-in-out group bg-primary">
             <Link

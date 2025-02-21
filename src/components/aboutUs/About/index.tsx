@@ -3,12 +3,7 @@ import { Col, Flex, Row, Typography } from "antd";
 import Image from "next/image";
 import React from "react";
 import { FaCheck } from "react-icons/fa";
-import { Great_Vibes } from "next/font/google";
-
-const greatVibes = Great_Vibes({
-  weight: "400",
-  subsets: ["latin"],
-});
+import { Heading } from "@/components/shared/PageHeading";
 
 const About = () => {
   return (
@@ -29,18 +24,11 @@ const About = () => {
 
           <Col xs={24} lg={12}>
             <div className="lg:p-8 p-4">
-              <Typography.Text
-                className={`block ${greatVibes.className} text-4xl text-primary leading-8 font-normal capitalize !mb-3`}
-              >
-                about
-              </Typography.Text>
-
-              <Typography.Title
-                level={3}
-                className="md:!text-4xl !text-2xl font-semibold leading-[43px] !text-gray-800 capitalize !m-0"
-              >
-                Welcome To The Best <br /> Catering Company
-              </Typography.Title>
+              <Heading
+                title="about"
+                subTitle="Welcome To The Best Catering Company"
+                subTitleClassName="md:w-[400px]"
+              />
 
               <p className="text-justify text-base leading-[24px] text-gray-700 md:my-5 my-6">
                 Bikaner Marwadi Caterers is a renowned catering service company

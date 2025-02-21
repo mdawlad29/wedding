@@ -1,45 +1,16 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import ComponentLayout from "@/components/shared/ComponentLayout";
 import Curve from "@/components/shared/Curve";
 import { Heading } from "@/components/shared/PageHeading";
-import { Col, Flex, Row, Typography } from "antd";
+import { Col, Row } from "antd";
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
+import ProgressBar from "@/components/shared/Progressbar";
 
 const ChooseUs = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const [progress, setProgress] = useState([0, 0, 0]);
-
-  useEffect(() => {
-    if (isInView) {
-      const targets = [89, 86, 82];
-      const counts = [0, 0, 0];
-      const intervals: NodeJS.Timeout[] = [];
-
-      targets.forEach((target, i) => {
-        intervals[i] = setInterval(() => {
-          if (counts[i] >= target) {
-            clearInterval(intervals[i]);
-          } else {
-            counts[i]++;
-            setProgress((prev) => {
-              const newProgress = [...prev];
-              newProgress[i] = counts[i];
-              return newProgress;
-            });
-          }
-        }, 10);
-      });
-
-      return () => intervals.forEach((interval) => clearInterval(interval));
-    }
-  }, [isInView]);
-
-  const skills = [
-    "Architecture Planning",
-    "Project Management",
-    "Consultation Design",
+  const skillsData = [
+    { name: "Architecture Planning", target: 89 },
+    { name: "Project Management", target: 86 },
+    { name: "Consultation Design", target: 82 },
   ];
 
   return (
@@ -58,40 +29,7 @@ const ChooseUs = () => {
               for 20 years.
             </p>
 
-            <div ref={ref} className="mb-8">
-              {skills.map((skill, index) => (
-                <div key={index} className="mb-3">
-                  <Flex align="center" justify="space-between" className="mb-2">
-                    <Typography.Text className="text-[16px] font-medium !text-accent capitalize">
-                      {skill}
-                    </Typography.Text>
-
-                    <motion.div
-                      className="text-[16px] text-[#585858]"
-                      initial={{ opacity: 0 }}
-                      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-                      transition={{ duration: 1, delay: 0.3 }}
-                    >
-                      {progress[index]}%
-                    </motion.div>
-                  </Flex>
-
-                  <div className="relative w-full h-[10px] bg-neutral overflow-hidden">
-                    <motion.div
-                      className="h-full bg-primary"
-                      style={{ width: `${progress[index]}%` }}
-                      initial={{ width: "0%" }}
-                      animate={
-                        isInView
-                          ? { width: `${progress[index]}%` }
-                          : { width: "0%" }
-                      }
-                      transition={{ duration: 1, ease: "easeOut" }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+            <ProgressBar skills={skillsData} />
           </Col>
 
           <Col xs={24} md={24} lg={15}>

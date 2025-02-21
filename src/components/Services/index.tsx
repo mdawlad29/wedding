@@ -4,13 +4,8 @@ import { Flex, Typography } from "antd";
 import Link from "next/link";
 import ServiceCard from "./ServiceCard";
 import { motion, useInView } from "framer-motion";
-import { Great_Vibes } from "next/font/google";
 import ComponentLayout from "../shared/ComponentLayout";
-
-const greatVibes = Great_Vibes({
-  weight: "400",
-  subsets: ["latin"],
-});
+import { Heading } from "../shared/PageHeading";
 
 const Services = () => {
   const ref = useRef(null);
@@ -19,11 +14,7 @@ const Services = () => {
   return (
     <div className="bg-gray-100">
       <ComponentLayout className="md:py-20 py-16 !mb-0">
-        <Typography.Text
-          className={`${greatVibes.className} block italic text-4xl text-primary leading-8 font-normal capitalize !mb-3`}
-        >
-          our services
-        </Typography.Text>
+        <Heading title="our services" />
 
         <Flex align="center" gap={40} wrap="wrap" className="md:mb-16 mb-10">
           <div>

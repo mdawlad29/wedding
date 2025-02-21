@@ -1,33 +1,16 @@
 "use client";
-import { Typography } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaClock } from "react-icons/fa";
-import { Great_Vibes } from "next/font/google";
 import ComponentLayout from "../shared/ComponentLayout";
-
-const greatVibes = Great_Vibes({
-  weight: "400",
-  subsets: ["latin"],
-});
+import { Heading } from "../shared/PageHeading";
 
 const Blog = () => {
   return (
     <ComponentLayout className="mb-28">
       <div className="text-center mb-16">
-        <Typography.Text
-          className={`block ${greatVibes.className} text-3xl text-primary leading-8 font-normal capitalize !mb-3`}
-        >
-          our blog
-        </Typography.Text>
-
-        <Typography.Title
-          level={3}
-          className="md:!text-4xl !text-2xl font-semibold leading-[43px] !text-gray-800 capitalize !m-0 "
-        >
-          Latest Blog & Articles
-        </Typography.Title>
+        <Heading title="our blog" subTitle="Latest Blog & Articles" />
       </div>
 
       <div className="max-w-4xl flex flex-col md:flex-row items-center gap-6">
