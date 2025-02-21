@@ -9,7 +9,7 @@ const ComponentLayout = ({
 }) => {
   return (
     <section
-      className={`lg:mx-28 md:mx-7 mx-4 lg:mt-24 md:mt-16 my-12 ${className}`}
+      className={`lg:mx-28 md:mx-7 mx-4 lg:my-24 md:my-16 my-12 ${className}`}
     >
       {children}
     </section>

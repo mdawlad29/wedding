@@ -18,8 +18,7 @@ const Services = () => {
 
   return (
     <div className="bg-gray-100">
-      {/* md:mt-14 lg:mt-24 mt-10 md:py-20 py-16 */}
-      <ComponentLayout className="md:py-20 py-16 mb-0">
+      <ComponentLayout className="md:py-20 py-16 !mb-0">
         <Typography.Text
           className={`${greatVibes.className} block italic text-4xl text-primary leading-8 font-normal capitalize !mb-3`}
         >
