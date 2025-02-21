@@ -1,7 +1,8 @@
 "use client";
-import ChooseUs from "@/components/About/ChooseUs";
-import Mission from "@/components/About/Mission";
-import OurTem from "@/components/About/OutTeam";
+import AboutUs from "@/components/aboutUs/AboutUs";
+import ChooseUs from "@/components/aboutUs/ChooseUs";
+import Mission from "@/components/aboutUs/Mission";
+import OurTem from "@/components/aboutUs/OutTeam";
 import Blog from "@/components/Blog";
 import Events from "@/components/Events";
 import React from "react";
@@ -9,6 +10,7 @@ import React from "react";
 const AboutPage = () => {
   return (
     <>
+      <AboutUs />
       <Mission />
       <ChooseUs />
       <OurTem />
