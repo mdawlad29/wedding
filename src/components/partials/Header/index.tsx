@@ -1,100 +1,67 @@
 "use client";
-import Image from "next/image";
+import React from "react";
+import { Flex } from "antd";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { headerMenus } from "./HeaderMenus";
+import { usePathname } from "next/navigation";
 import ResponsiveHeader from "./ResponsiveHeader";
 import HeroSection from "@/components/HeroSection";
-import { usePathname } from "next/navigation";
-
-const images = [
-  "/assets/images/hero/hero.jpg",
-  "/assets/images/hero/hero-1.jpg",
-  "/assets/images/hero/hero-2.jpg",
-  "/assets/images/hero/hero-3.jpg",
-];
-
-const galleryImage = "/assets/images/gallery/image-1.jpg"; // Set the gallery image path here
+import HeaderBackgroundImage from "@/components/shared/HeaderBackgroundImage";
 
 const Header = () => {
   const pathname = usePathname();
 
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 7000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <header className="relative md:h-[140vh] h-screen w-full overflow-hidden">
+    <header
+      className={`relative ${
+        pathname === "/" ? "md:h-[140vh] h-screen" : "h-[70vh]"
+      } w-full overflow-hidden`}
+    >
       {/* Background Image */}
-      <div className="absolute inset-0">
-        {pathname === "/gallery" ? (
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-100"
-            style={{
-              backgroundImage: `url(${galleryImage})`,
-            }}
-          />
-        ) : (
-          images.map((img, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 bg-cover bg-center transition-all duration-[5000ms] ease-in-out ${
-                index === activeIndex
-                  ? "opacity-100 scale-110"
-                  : "opacity-0 scale-100"
-              }`}
-              style={{ backgroundImage: `url(${img})` }}
-            />
-          ))
-        )}
-      </div>
+      <HeaderBackgroundImage />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-75" />
 
       {/* Navigation */}
       <nav className="relative lg:block hidden">
-        <div className="flex items-center justify-center gap-10 py-3">
-          {/* First Two Items */}
-          <div className="flex gap-8">
+        <Flex align="center" justify="center" gap={40}>
+          <Flex align="center" gap={32}>
             {headerMenus.slice(0, 3).map((menu) => (
               <Link
                 key={menu.name}
                 href={menu.link}
-                className="text-base text-white hover:text-primary uppercase transition duration-150"
+                className="text-base text-white hover:text-primary uppercase transition duration-150 block"
               >
                 {menu.name}
               </Link>
             ))}
-          </div>
+          </Flex>
 
           {/* Logo */}
-          <Image
-            src="/assets/images/logo.png"
-            alt="logo"
-            width={140}
-            height={140}
-          />
+          <Link href={"/"}>
+            <Image
+              src="/assets/images/logo.png"
+              alt="logo"
+              width={180}
+              height={180}
+              className="mx-6"
+            />
+          </Link>
 
-          {/* Next Two Items */}
-          <div className="flex gap-8">
+          <Flex align="center" gap={32}>
             {headerMenus.slice(3, 5).map((menu) => (
               <Link
                 key={menu.name}
                 href={menu.link}
-                className="text-base text-white hover:text-primary uppercase transition duration-300"
+                className="text-base text-white hover:text-primary block uppercase transition duration-300"
               >
                 {menu.name}
               </Link>
             ))}
-          </div>
-        </div>
+          </Flex>
+        </Flex>
       </nav>
 
       {/* Responsive Header */}

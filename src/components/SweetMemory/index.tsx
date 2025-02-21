@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Col, Flex, Row, Typography } from "antd";
 import Link from "next/link";
 import { FaQuoteLeft } from "react-icons/fa";
+import ComponentLayout from "../shared/ComponentLayout";
 
 const imageData = [
   {
@@ -54,7 +55,7 @@ const SweetMemory = () => {
   };
 
   return (
-    <section className="lg:mx-28 md:mx-7 mx-4 md:mt-16 my-12">
+    <ComponentLayout>
       <Row gutter={[30, 30]}>
         <Col xs={24} md={24} lg={12}>
           <Flex gap={30}>
@@ -116,7 +117,7 @@ const SweetMemory = () => {
           </Slider>
         </Col>
       </Row>
-    </section>
+    </ComponentLayout>
   );
 };
 

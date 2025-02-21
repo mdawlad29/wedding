@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { FaClock } from "react-icons/fa";
 import { Great_Vibes } from "next/font/google";
+import ComponentLayout from "../shared/ComponentLayout";
 
 const greatVibes = Great_Vibes({
   weight: "400",
@@ -13,7 +14,7 @@ const greatVibes = Great_Vibes({
 
 const Blog = () => {
   return (
-    <section className="lg:mx-28 md:mx-7 mx-4 mt-7 lg:my-20 md:my-20 my-16">
+    <ComponentLayout className="mb-28">
       <div className="text-center mb-16">
         <Typography.Text
           className={`block ${greatVibes.className} text-3xl text-primary leading-8 font-normal capitalize !mb-3`}
@@ -68,7 +69,7 @@ const Blog = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </ComponentLayout>
   );
 };
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import ServiceCard from "./ServiceCard";
 import { motion, useInView } from "framer-motion";
 import { Great_Vibes } from "next/font/google";
+import ComponentLayout from "../shared/ComponentLayout";
 
 const greatVibes = Great_Vibes({
   weight: "400",
@@ -16,8 +17,9 @@ const Services = () => {
   const isInView = useInView(ref, { once: false });
 
   return (
-    <section className="bg-gray-100">
-      <div className="lg:mx-28 md:mx-7 mx-4 md:mt-14 lg:mt-24 mt-10 md:py-20 py-16">
+    <div className="bg-gray-100">
+      {/* md:mt-14 lg:mt-24 mt-10 md:py-20 py-16 */}
+      <ComponentLayout className="md:py-20 py-16 mb-0">
         <Typography.Text
           className={`${greatVibes.className} block italic text-4xl text-primary leading-8 font-normal capitalize !mb-3`}
         >
@@ -75,8 +77,8 @@ const Services = () => {
             ))}
           </div>
         </motion.div>
-      </div>
-    </section>
+      </ComponentLayout>
+    </div>
   );
 };
 

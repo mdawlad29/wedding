@@ -10,13 +10,15 @@ const ResponsiveHeader = () => {
 
   return (
     <nav className="py-3 px-4 lg:hidden block fixed w-full inset-0 z-50">
-      <div className="flex justify-between items-center">
-        <Image
-          src="/assets/images/logo.png"
-          alt="logo"
-          width={80}
-          height={80}
-        />
+      <Flex align="center" justify="space-between">
+        <Link href={"/"}>
+          <Image
+            src="/assets/images/logo.png"
+            alt="logo"
+            width={100}
+            height={100}
+          />
+        </Link>
 
         <MdMenu
           onClick={() => setOpenSidebar(true)}
@@ -30,12 +32,14 @@ const ResponsiveHeader = () => {
           } transition-transform duration-300 ease-in-out`}
         >
           <Flex align="center" justify="space-between">
-            <Image
-              src="/assets/images/logo.png"
-              alt="logo"
-              width={80}
-              height={80}
-            />
+            <Link href={"/"}>
+              <Image
+                src="/assets/images/logo.png"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+            </Link>
 
             <MdClose
               onClick={() => setOpenSidebar(false)}
@@ -57,7 +61,7 @@ const ResponsiveHeader = () => {
             ))}
           </div>
         </div>
-      </div>
+      </Flex>
     </nav>
   );
 };

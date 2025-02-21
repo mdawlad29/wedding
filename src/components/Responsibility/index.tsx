@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaQuoteLeft } from "react-icons/fa";
 import Experience from "./Experience";
+import ComponentLayout from "../shared/ComponentLayout";
 
 const Responsibility = () => {
   const ref = useRef(null);
@@ -42,7 +43,7 @@ const Responsibility = () => {
   }, [isInView]);
 
   return (
-    <section className="relative md:mt-14 lg:mt-24 mt-10 lg:mx-28 md:mx-7 mx-4">
+    <ComponentLayout>
       <Row gutter={[40, 40]}>
         <Col xs={24} md={24} lg={12}>
           <Flex gap={30}>
@@ -144,7 +145,7 @@ const Responsibility = () => {
           </div>
         </Col>
       </Row>
-    </section>
+    </ComponentLayout>
   );
 };
 
