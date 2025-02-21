@@ -44,7 +44,7 @@ const Responsibility = () => {
 
   return (
     <ComponentLayout>
-      <Row gutter={[40, 40]}>
+      <Row gutter={[40, 40]} className="!m-0">
         <Col xs={24} md={24} lg={12}>
           <Flex gap={30}>
             <div className="w-14 h-14 rounded-full flex items-center justify-center bg-primary text-neutral">

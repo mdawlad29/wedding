@@ -9,7 +9,7 @@ const Gallery = () => {
 
   return (
     <ComponentLayout>
-      <Row gutter={[16, 16]}>
+      <Row gutter={[16, 16]} className="!m-0">
         {galleryData.map((item) => (
           <Col key={item.id} xs={24} md={12} lg={8}>
             <Image

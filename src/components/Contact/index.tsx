@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <ComponentLayout>
-      <Row gutter={[52, 52]} className="mb-28">
+      <Row gutter={[52, 52]} className="!mb-28 !m-0">
         <Col xs={24} md={24} lg={12}>
           <Form
             name="basic"

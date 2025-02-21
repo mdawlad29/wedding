@@ -22,7 +22,7 @@ const Testimonial = () => {
 
   return (
     <section className="mt-20">
-      <Row gutter={[20, 20]}>
+      <Row gutter={[20, 20]} className="!m-0">
         <Col xs={24} md={24} lg={6}>
           <Image
             src={"/assets/images/sweet_memory/slide-4.jpg"}

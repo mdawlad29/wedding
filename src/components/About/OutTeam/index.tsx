@@ -1,7 +1,5 @@
-"use client";
 import ComponentLayout from "@/components/shared/ComponentLayout";
 import { Heading } from "@/components/shared/PageHeading";
-import { Flex } from "antd";
 import Image from "next/image";
 import React from "react";
 
@@ -13,7 +11,7 @@ const OurTem = () => {
           <Heading title="our team" subTitle="Meet With Professional Team" />
         </div>
 
-        <div className="relative group w-[400px] h-[500px] overflow-hidden">
+        <div className="relative group md:w-[400px] h-[500px] overflow-hidden">
           <Image
             src="/assets/images/about/about-me.png"
             width={600}

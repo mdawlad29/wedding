@@ -2,7 +2,7 @@ import React from "react";
 
 const Curve = () => {
   return (
-    <div className="w-full absolute bottom-0 z-10">
+    <div className="w-full absolute bottom-0 z-20">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1000 100"
