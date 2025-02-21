@@ -33,7 +33,7 @@ const Events = () => {
 
         <div className="text-center w-48 py-4 hover:bg-neutral hover:-translate-y-2 duration-300 ease-in-out group bg-primary">
           <Link
-            href={""}
+            href={"/contact"}
             className="!text-neutral group-hover:!text-primary text-xl capitalize font-semibold"
           >
             book now

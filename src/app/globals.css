@@ -34,3 +34,11 @@ body {
     border-radius: 2px;
     background-color: #ff9a00;
   }
+
+  .ant-form-item .ant-form-item-label{
+    font-size: 16px;
+    color: #000;
+    line-height: 21px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }

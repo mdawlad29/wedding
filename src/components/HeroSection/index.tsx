@@ -56,7 +56,7 @@ const HeroSection = () => {
             </Typography.Title>
 
             <Link
-              href={""}
+              href={"/contact"}
               className="px-12 py-4 bg-primary text-neutral text-xl capitalize font-semibold hover:bg-neutral hover:-translate-y-2 duration-300 ease-in-out hover:text-primary"
             >
               contact us
