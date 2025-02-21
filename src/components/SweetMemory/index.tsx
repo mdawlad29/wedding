@@ -10,35 +10,35 @@ import ComponentLayout from "../shared/ComponentLayout";
 const imageData = [
   {
     id: 1,
-    image: "/assets/images/sweet_memory/slide-1.webp",
+    image: "/assets/images/gallery/image-31.jpg",
   },
   {
     id: 2,
-    image: "/assets/images/sweet_memory/slide-2.webp",
+    image: "/assets/images/gallery/image-32.jpg",
   },
   {
     id: 3,
-    image: "/assets/images/sweet_memory/slide-3.jpg",
+    image: "/assets/images/gallery/image-33.jpg",
   },
   {
     id: 4,
-    image: "/assets/images/sweet_memory/slide-4.jpg",
+    image: "/assets/images/gallery/image-37.jpg",
   },
   {
     id: 5,
-    image: "/assets/images/sweet_memory/slide-5.jpg",
+    image: "/assets/images/gallery/image-39.jpg",
   },
   {
     id: 6,
-    image: "/assets/images/sweet_memory/slide-6.jpg",
+    image: "/assets/images/gallery/image-42.jpg",
   },
   {
     id: 7,
-    image: "/assets/images/sweet_memory/slide-7.jpg",
+    image: "/assets/images/gallery/image-43.jpg",
   },
   {
     id: 8,
-    image: "/assets/images/sweet_memory/slide-8.jpg",
+    image: "/assets/images/gallery/image-45.jpg",
   },
 ];
 
@@ -111,7 +111,7 @@ const SweetMemory = () => {
                 alt="Slide-image"
                 width={500}
                 height={500}
-                className="object-cover md:h-[300px] lg:h-full h-[200px]"
+                className="object-cover md:h-[300px] lg:h-[560px] h-[200px]"
               />
             ))}
           </Slider>

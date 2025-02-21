@@ -9,19 +9,19 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        primary: "#FF9A00",
+        primary: "#FF7F00",
         secondary: "#f2a705",
         accent: "#000",
         neutral: "#fff",
       },
       textColor: {
-        primary: "#FF9A00",
+        primary: "#FF7F00",
         secondary: "#f2a705",
         accent: "#000",
         neutral: "#fff",
       },
       borderColor: {
-        primary: "#FF9A00",
+        primary: "#FF7F00",
         secondary: "#f2a705",
         accent: "#000",
         neutral: "#fff",

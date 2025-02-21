@@ -38,8 +38,8 @@ const Services = () => {
 
         <motion.div
           ref={ref}
-          initial={{ x: "5vw", opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : { x: "5vw", opacity: 0 }}
+          initial={{ x: "10vw", opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
           transition={{ duration: 2, ease: "easeInOut" }}
         >
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
@@ -47,6 +47,9 @@ const Services = () => {
               <ServiceCard
                 key={index}
                 index={index}
+                btnLink="/contact"
+                btnTitle="book now"
+                isActiveCard={index === 2}
                 title={
                   index === 0
                     ? "Corporate Events"
@@ -61,8 +64,6 @@ const Services = () => {
                     ? "Crafting unforgettable wedding experiences with exquisite menus and impeccable service. Elevate your special day with Bikaner Marwadi Caterers."
                     : "Elevate your social gatherings with our delightful menus and flawless service. Turn every moment into a memorable celebration with Bikaner Marwadi Caterers."
                 }
-                btnLink="/contact"
-                btnTitle="book now"
               />
             ))}
           </div>

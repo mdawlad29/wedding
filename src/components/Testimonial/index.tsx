@@ -1,14 +1,9 @@
 "use client";
-import { Col, Rate, Row, Typography } from "antd";
+import { Col, Rate, Row } from "antd";
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
-import { Great_Vibes } from "next/font/google";
-
-const greatVibes = Great_Vibes({
-  weight: "400",
-  subsets: ["latin"],
-});
+import { Heading } from "../shared/PageHeading";
 
 const Testimonial = () => {
   const settings = {
@@ -25,7 +20,7 @@ const Testimonial = () => {
       <Row gutter={[20, 20]} className="!m-0">
         <Col xs={24} md={24} lg={6}>
           <Image
-            src={"/assets/images/sweet_memory/slide-4.jpg"}
+            src={"/assets/images/gallery/image-16.jpg"}
             width={400}
             height={400}
             alt="Testimonial-image"
@@ -35,19 +30,8 @@ const Testimonial = () => {
 
         <Col xs={24} md={24} lg={12}>
           <div className="flex flex-col justify-center items-center h-full bg-gray-100 text-center md:py-10 py-5 px-5">
-            <div>
-              <span
-                className={`${greatVibes.className} text-primary text-3xl font-normal mb-4 block capitalize`}
-              >
-                testimonial
-              </span>
-
-              <Typography.Title
-                level={3}
-                className="text-[22px] leading-[33px] font-semibold !text-accent md:!mb-12 mb-6"
-              >
-                What They Say
-              </Typography.Title>
+            <div className="md:mb-12 mb-6">
+              <Heading title="testimonial" subTitle="what they say" />
             </div>
 
             <div className="w-full">
@@ -82,7 +66,7 @@ const Testimonial = () => {
 
         <Col xs={24} md={24} lg={6}>
           <Image
-            src={"/assets/images/sweet_memory/slide-5.jpg"}
+            src={"/assets/images/gallery/image-9.jpg"}
             width={400}
             height={400}
             alt="Testimonial-image"

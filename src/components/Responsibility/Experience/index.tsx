@@ -10,8 +10,8 @@ const Experience = () => {
   return (
     <motion.div
       ref={ref}
-      initial={{ x: "3vw", opacity: 0 }}
-      animate={isInView ? { x: 0, opacity: 1 } : { x: "3vw", opacity: 0 }}
+      initial={{ x: "6vw", opacity: 0 }}
+      animate={isInView ? { x: 0, opacity: 1 } : { x: "6vw", opacity: 0 }}
       transition={{ duration: 2, ease: "easeInOut" }}
       className="absolute lg:top-[25%] lg:left-[31%] top-[24%] left-[35%] -translate-x-1/2 -translate-y-1/2 md:block hidden"
     >

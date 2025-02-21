@@ -1,7 +1,9 @@
+"use client";
 import { Typography } from "antd";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useRef } from "react";
 import { Great_Vibes } from "next/font/google";
+import { motion, useInView } from "framer-motion";
 
 const greatVibes = Great_Vibes({
   weight: "400",
@@ -48,13 +50,20 @@ export const Heading = ({
   titleClassName?: string;
   subTitleClassName?: string;
 }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+
   return (
     <>
-      <Typography.Text
+      <motion.h6
+        ref={ref}
+        initial={{ y: "2vw", opacity: 0 }}
+        animate={isInView ? { y: 0, opacity: 1 } : { y: "2vw", opacity: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
         className={`block ${greatVibes.className} ${titleClassName} text-4xl text-primary leading-8 font-normal capitalize !mb-4`}
       >
         {title}
-      </Typography.Text>
+      </motion.h6>
 
       {subTitle && (
         <Typography.Title
