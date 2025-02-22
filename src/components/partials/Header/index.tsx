@@ -22,7 +22,11 @@ const Header = () => {
       <HeaderBackgroundImage />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-55 backdrop-blur-sm" />
+      <div
+        className={`absolute inset-0 bg-black ${
+          pathname === "/" ? "bg-opacity-55 backdrop-blur-sm" : "bg-opacity-75"
+        }`}
+      />
 
       {/* Navigation */}
       <nav className="relative lg:block hidden">
