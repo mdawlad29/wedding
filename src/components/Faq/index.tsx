@@ -13,22 +13,22 @@ const faqData = [
   {
     id: 1,
     title: "What types of events does your catering service cover?",
-    desc: "We cater to a wide range of events, including weddings, corporate gatherings, private parties, and more. Our versatile menu options are tailored to suit any occasion.",
+    desc: "We provide catering for a variety of events, including weddings, corporate gatherings, private parties, and more. Our diverse menu options are customized to enhance every occasion.",
   },
   {
     id: 2,
-    title: "How far in advance should I book your catering services?",
-    desc: "To ensure we can provide you with the best service, we recommend booking at least two to three months before your event. However, we do our best to accommodate last-minute requests when possible.",
+    title: "How early should I book your catering services?",
+    desc: "To guarantee the best service, we recommend booking at least two to three months in advance. However, we strive to accommodate last-minute requests whenever possible.",
   },
   {
     id: 3,
     title: "What services are included in your catering packages?",
-    desc: "Our catering packages typically include menu planning, food preparation, on-site service, and clean-up. We can also provide additional services like event planning and equipment rental upon request.",
+    desc: "Our catering packages generally include menu planning, food preparation, on-site service, and clean-up. Additional services such as event planning and equipment rental are available upon request.",
   },
   {
     id: 4,
     title: "Do you offer tastings before we finalize menu selection?",
-    desc: "Yes, we offer tastings to help you make informed decisions about your menu. It's an opportunity to sample our dishes and make any necessary adjustments to ensure you're delighted with the final choices for your event.",
+    desc: "Yes, we offer tastings to help you choose the perfect menu. This allows you to sample our dishes and make any necessary adjustments to ensure you're completely satisfied with your selections for the event.",
   },
 ];
 
@@ -96,7 +96,9 @@ const Faq = () => {
                   </Typography.Text>
 
                   <p className="text-justify text-base leading-[24px] text-gray-700">
-                    {index === 0 ? "123456789" : "examplae@gmail.com"}
+                    {index === 0
+                      ? "+8801735329632"
+                      : "mahmudmilon9632@gmail.com"}
                   </p>
                 </div>
               </div>

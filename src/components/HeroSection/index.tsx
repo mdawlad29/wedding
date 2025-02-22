@@ -19,15 +19,7 @@ const HeroSection = () => {
 
   return (
     <div className="absolute inset-0 flex flex-col items-center justify-center md:mt-24 mt-12">
-      {pathname === "/gallery" ? (
-        <PageHeadingContent title="gallery" />
-      ) : pathname === "/contact" ? (
-        <PageHeadingContent title="contact us" />
-      ) : pathname === "/services" ? (
-        <PageHeadingContent title="services" />
-      ) : pathname === "/about" ? (
-        <PageHeadingContent title="about us" />
-      ) : (
+      {pathname === "/" ? (
         <>
           <motion.div
             initial={{ x: "100vw", opacity: 0 }}
@@ -70,7 +62,9 @@ const HeroSection = () => {
             className="lg:mt-16 mt-10"
           >
             <Link
-              href={""}
+              href={
+                "https://www.facebook.com/profile.php?id=61572432884301&sk=photos"
+              }
               target="_blank"
               className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-neutral !text-primary duration-500 ease-in-out transform hover:scale-110"
             >
@@ -78,7 +72,7 @@ const HeroSection = () => {
             </Link>
 
             <Link
-              href={""}
+              href={"https://www.instagram.com/jtdddut/"}
               target="_blank"
               className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-neutral !text-primary duration-500 ease-in-out transform hover:scale-110"
             >
@@ -86,6 +80,16 @@ const HeroSection = () => {
             </Link>
           </Flex>
         </>
+      ) : pathname === "/gallery" ? (
+        <PageHeadingContent title="gallery" />
+      ) : pathname === "/contact" ? (
+        <PageHeadingContent title="contact us" />
+      ) : pathname === "/services" ? (
+        <PageHeadingContent title="services" />
+      ) : pathname === "/about" ? (
+        <PageHeadingContent title="about us" />
+      ) : (
+        ""
       )}
 
       <Curve />

@@ -180,7 +180,9 @@ const Contact = () => {
 
       <Flex align="center" gap={18} className="mb-4">
         <Link
-          href={""}
+          href={
+            "https://www.facebook.com/profile.php?id=61572432884301&sk=photos"
+          }
           target="_blank"
           className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-primary !text-neutral hover:bg-accent duration-700 ease-in-out transform hover:scale-110"
         >
@@ -188,7 +190,7 @@ const Contact = () => {
         </Link>
 
         <Link
-          href={""}
+          href={"https://www.instagram.com/jtdddut/"}
           target="_blank"
           className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-primary !text-neutral hover:bg-accent duration-700 ease-in-out transform hover:scale-110"
         >

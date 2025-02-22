@@ -26,14 +26,11 @@ const Services = () => {
             </Typography.Title>
           </div>
 
-          <div className="text-center w-48 py-4 hover:bg-accent hover:-translate-y-2 duration-300 ease-in-out group bg-primary">
-            <Link
-              href={"/services"}
-              className="!text-neutral group:hover:!text-primary text-xl capitalize font-semibold"
-            >
+          <Link href={"/services"}>
+            <p className="!text-neutral group:hover:!text-primary text-xl capitalize font-semibold text-center w-48 py-4 hover:bg-accent hover:-translate-y-2 duration-300 ease-in-out group bg-primary">
               all services
-            </Link>
-          </div>
+            </p>
+          </Link>
         </Flex>
 
         <motion.div
@@ -59,10 +56,10 @@ const Services = () => {
                 }
                 description={
                   index === 0
-                    ? "Elevate your corporate experience with our tailored menus, exceptional service, and the rich flavors of Rajasthan. Make your event unforgettable with Bikaner Marwadi Caterers."
+                    ? "Elevate your corporate experience with our tailored menus, exceptional service, and the rich flavors of Rajasthan. Make your event unforgettable with Raju Catering Services."
                     : index === 1
-                    ? "Crafting unforgettable wedding experiences with exquisite menus and impeccable service. Elevate your special day with Bikaner Marwadi Caterers."
-                    : "Elevate your social gatherings with our delightful menus and flawless service. Turn every moment into a memorable celebration with Bikaner Marwadi Caterers."
+                    ? "Creating unforgettable wedding moments with delectable menus and flawless service. Make your special day extraordinary with Raju Catering Services."
+                    : "Enhance your social gatherings with our exquisite menus and exceptional service. Make every occasion a cherished celebration with Raju Catering Services."
                 }
               />
             ))}

@@ -64,8 +64,8 @@ const Footer = () => {
             <FooterHeading title="Useful Links" />
             <div>
               {[
-                { name: "Privacy Policy", link: "/privacy-policy" },
-                { name: "Terms & Conditions", link: "/terms-conditions" },
+                { name: "Privacy Policy", link: "" },
+                { name: "Terms & Conditions", link: "" },
               ].map((item, index) => (
                 <Link
                   key={index}
@@ -108,7 +108,7 @@ const Footer = () => {
             <Flex align="center" gap={8}>
               <MdEmail className="text-lg text-primary" />
               <Text className="text-base text-neutral leading-[24px]">
-                bikanermarwadicaters@gmail.com
+                mahmudmilon9632@gmail.com
               </Text>
             </Flex>
           </Col>
@@ -117,8 +117,7 @@ const Footer = () => {
             <Flex align="center" gap={8}>
               <IoLocationSharp className="inline-block lg:w-5 w-8 lg:h-5 h-8 text-primary" />
               <Text className="text-base text-neutral leading-[24px]">
-                15, Shopping Center, Janta Colony Adarsh Nagar, Jaipur-302004
-                (Raj.)
+                Kunhadi Police Station, Kota, Rajasthan 324008
               </Text>
             </Flex>
           </Col>
@@ -127,7 +126,14 @@ const Footer = () => {
         <Divider className="bg-neutral !m-0 !mt-12 !mb-5" />
 
         <Text className="flex justify-end text-sm text-[#eee]">
-          Copyright ©️ 2023 Bikaner Marwadi Caterers. All rights reserved.
+          Designed & Developed By{" "}
+          <Link
+            href={"https://awlad.vercel.app"}
+            target="_blank"
+            className="hover:underline ml-2"
+          >
+            Awlad
+          </Link>
         </Text>
       </div>
     </footer>

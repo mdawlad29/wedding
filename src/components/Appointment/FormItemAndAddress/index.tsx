@@ -1,4 +1,5 @@
 import { Heading } from "@/components/shared/PageHeading";
+import Paragraph from "@/components/shared/Paragraph";
 import { Button, Col, Form, Input, Row, Typography } from "antd";
 import React from "react";
 import { FiPhoneCall } from "react-icons/fi";
@@ -119,11 +120,16 @@ const FormItemAndAddress = () => {
                 subTitleClassName="!text-neutral"
               />
 
-              <p className="text-justify text-base leading-[24px] text-neutral lg:my-8 my-5">
+              {/* <p className="text-justify text-base leading-[24px] text-neutral lg:my-8 my-5">
                 Schedule your event with ease. Contact us, discuss your
                 requirements, and secure your date. Bikaner Marwadi Caterers,
                 simplifying event planning for you.
-              </p>
+              </p> */}
+
+              <Paragraph
+                className="text-neutral"
+                title="Schedule your event with ease. Contact us, discuss your requirements, and secure your date. Raju Catering Services, simplifying event planning for you."
+              />
 
               <Typography.Text
                 className={`text-[20px] text-neutral leading-[23px] font-semibold capitalize lg:mb-6 mb-4 block`}
@@ -150,11 +156,11 @@ const FormItemAndAddress = () => {
 
                   <p className="text-base leading-[24px] text-neutral">
                     {index === 0
-                      ? "15, Shopping Center, Janta Colony Adarsh Nagar, Jaipur-302004 (Raj.)"
+                      ? "Kunhadi Police Station, Kota, Rajasthan 324008"
                       : index === 1
-                      ? "0123456789"
+                      ? "+8801735329632"
                       : index === 2
-                      ? "examplae@gmail.com"
+                      ? "mahmudmilon9632@gmail.com"
                       : "09:00 AM - 18:00 PM"}
                   </p>
                 </div>

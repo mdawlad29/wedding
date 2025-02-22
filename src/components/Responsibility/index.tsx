@@ -8,6 +8,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 import Experience from "./Experience";
 import ComponentLayout from "../shared/ComponentLayout";
 import ProgressBar from "../shared/Progressbar";
+import Paragraph from "../shared/Paragraph";
 
 const Responsibility = () => {
   const skillsData = [
@@ -33,12 +34,12 @@ const Responsibility = () => {
             </Typography.Title>
           </Flex>
 
-          <p className="text-justify text-base leading-[24px] text-gray-700 md:my-5 my-2">
-            We invite you to experience the magic of Bikaner Marwadi Caterers.
+          <Paragraph
+            title="We invite you to experience the magic of Bikaner Marwadi Caterers.
             Whether it’s a grand celebration, an intimate gathering, or a
             corporate event, let us be your culinary artisans, your event
-            architects, and your trusted partner in creating memories.
-          </p>
+            architects, and your trusted partner in creating memories."
+          />
 
           <ProgressBar skills={skillsData} />
 
@@ -57,7 +58,7 @@ const Responsibility = () => {
             <Experience />
 
             <Image
-              src={"/assets/images/about/aboutImg.jpg"}
+              src={"/assets/images/gallery/image-46.jpg"}
               alt={"about-image"}
               width={300}
               height={300}
@@ -66,14 +67,14 @@ const Responsibility = () => {
 
             <div className="space-y-4">
               <Image
-                src={"/assets/images/about/aboutImg.jpg"}
+                src={"/assets/images/gallery/image-38.jpg"}
                 alt={"about-image"}
                 width={200}
                 height={200}
                 className="lg:w-[300px] w-full h-[200px] object-cover"
               />
               <Image
-                src={"/assets/images/about/aboutImg.jpg"}
+                src={"/assets/images/gallery/image-55.jpg"}
                 alt={"about-image"}
                 width={200}
                 height={200}

@@ -92,14 +92,11 @@ const SweetMemory = () => {
             connections formed during your event.”
           </p>
 
-          <div className="text-center w-48 py-4 hover:bg-accent hover:-translate-y-2 duration-300 ease-in-out group bg-primary">
-            <Link
-              href={"/contact"}
-              className="!text-neutral text-xl capitalize font-semibold"
-            >
+          <Link href={"/contact"}>
+            <p className="text-center w-48 py-4 hover:bg-accent hover:-translate-y-2 duration-300 ease-in-out group bg-primary !text-neutral text-xl capitalize font-semibold">
               get in touch
-            </Link>
-          </div>
+            </p>
+          </Link>
         </Col>
 
         <Col xs={24} md={24} lg={12}>

@@ -42,16 +42,28 @@ const PremiumService = () => {
                     ? "Corporate Events"
                     : index === 1
                     ? "Wedding Events"
-                    : "Social Events"
+                    : index === 2
+                    ? "social events"
+                    : index === 3
+                    ? "private party"
+                    : index === 4
+                    ? "Birthday party"
+                    : "Anniversary Events"
                 }
                 description={
                   index === 0
-                    ? "Elevate your corporate experience with our tailored menus, exceptional service, and the rich flavors of Rajasthan. Make your event unforgettable with Bikaner Marwadi Caterers."
+                    ? "Elevate your corporate experience with our tailored menus, exceptional service, and the rich flavors of Rajasthan. Make your event unforgettable with Raju Catering Services."
                     : index === 1
-                    ? "Crafting unforgettable wedding experiences with exquisite menus and impeccable service. Elevate your special day with Bikaner Marwadi Caterers."
-                    : "Elevate your social gatherings with our delightful menus and flawless service. Turn every moment into a memorable celebration with Bikaner Marwadi Caterers."
+                    ? "Creating unforgettable wedding moments with delectable menus and flawless service. Make your special day extraordinary with Raju Catering Services."
+                    : index === 2
+                    ? "Enhance your social gatherings with our exquisite menus and exceptional service. Make every occasion a cherished celebration with Raju Catering Services."
+                    : index === 3
+                    ? "Make your private gatherings extraordinary with our customized menus and exceptional service. Raju Catering Services ensures every occasion becomes a cherished celebration."
+                    : index === 4
+                    ? "Celebrate birthdays in style with our delectable menus and flawless service. Raju Catering Services transforms every moment into a cherished memory."
+                    : "Honor love and togetherness with our customized menus and exceptional service. Raju Catering Services creates unforgettable moments for your special day."
                 }
-                btnLink="/contact"
+                btnLink=""
                 btnTitle="book now"
               />
             ))}

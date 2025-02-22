@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { Heading } from "@/components/shared/PageHeading";
+import Paragraph from "@/components/shared/Paragraph";
 
 const About = () => {
   return (
@@ -14,11 +15,11 @@ const About = () => {
         <Row className="!m-0">
           <Col xs={24} lg={12}>
             <Image
-              src={"/assets/images/about/aboutImg.jpg"}
+              src={"/assets/images/about/about-us.png"}
               alt={"about-image"}
               width={300}
               height={300}
-              className={"w-full lg:h-[626px] h-[300px] object-cover"}
+              className={"w-full lg:h-[650px] h-[300px] object-cover"}
             />
           </Col>
 
@@ -30,24 +31,12 @@ const About = () => {
                 subTitleClassName="md:w-[400px]"
               />
 
-              <p className="text-justify text-base leading-[24px] text-gray-700 md:my-5 my-6">
-                Bikaner Marwadi Caterers is a renowned catering service company
-                located in the vibrant city of Jaipur, India. Specializing in
-                authentic Marwadi cuisine, this company offers a wide range of
-                culinary services to meet the diverse needs of its clients. With
-                a focus on traditional flavors and innovative presentation,
-                Bikaner Marwadi Caterers is well-known for its delectable
-                Rajasthani dishes, including dal baati churma, gatte ki sabzi,
-                and an array of sweets like ghewar and malpua. Whether it’s a
-                wedding, corporate event, or a special celebration, this
-                catering service company prides itself on delivering top-quality
-                food and impeccable service to make every occasion a memorable
-                and delightful experience for their customers in the heart of
-                Jaipur.
-              </p>
+              <Paragraph title="Raju Catering Services is a company located behind Kunhadi Police Station, Kota, Rajasthan 324008. Specializing in authentic vegetarian cuisine, we offer a wide range of culinary services to cater to the diverse needs of our clients. With a focus on traditional flavors and innovative presentation, Raju Catering Services is renowned for its delicious Rajasthani dishes, including dal baati churma, gatte ki sabzi, and a variety of sweets like ghewar and malpua.  " />
+
+              <Paragraph title="Whether it's a wedding, corporate event, or special celebration, we take pride in delivering top-quality food and impeccable service, ensuring that every occasion is a memorable and delightful experience for our customers in the heart of Rajasthan." />
 
               <Typography.Text className="text-[20px] font-semibold text-accent leading-[24px] mb-5 block">
-                20 Years Experiences In This Business
+                10 Years of Experience in the Catering Business
               </Typography.Text>
 
               {[...Array(3)]?.map((_, index) => (
@@ -56,9 +45,9 @@ const About = () => {
 
                   <Typography.Text className="text-base leading-[24px] text-gray-700 capitalize">
                     {index === 0
-                      ? "20 Years Experiences In This Business"
+                      ? "100% Quality Guarantee for Our Products  "
                       : index === 1
-                      ? "Custom Food Menu Catering"
+                      ? "Customized Food Menu Catering"
                       : "We Have A Passion For Food & Never Compromise Quality"}
                   </Typography.Text>
                 </Flex>

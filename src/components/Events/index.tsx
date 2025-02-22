@@ -31,14 +31,11 @@ const Events = () => {
           Ready To Book The Catering For Your Special Event?
         </h2>
 
-        <div className="text-center w-48 py-4 hover:bg-neutral hover:-translate-y-2 duration-300 ease-in-out group bg-primary">
-          <Link
-            href={"/contact"}
-            className="!text-neutral group-hover:!text-primary text-xl capitalize font-semibold"
-          >
+        <Link href={"/services"}>
+          <p className="text-center text-neutral hover:text-primary text-xl capitalize font-semibold w-48 py-4 hover:bg-neutral hover:-translate-y-2 duration-300 ease-in-out group bg-primary">
             book now
-          </Link>
-        </div>
+          </p>
+        </Link>
       </div>
 
       <Curve />

@@ -111,7 +111,7 @@ const ServiceCard = ({
 
       <Link
         href={`${btnLink}`}
-        className={`relative z-10 uppercase leading-[12px] font-semibold transition-colors duration-700 
+        className={`relative z-10 uppercase leading-[12px] text-[13px] transition-colors duration-700 
           ${
             isActiveCard
               ? "!text-neutral"
