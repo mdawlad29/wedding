@@ -1,3 +1,4 @@
+"use client";
 import ComponentLayout from "@/components/shared/ComponentLayout";
 import { Col, Row, Typography } from "antd";
 import Image from "next/image";

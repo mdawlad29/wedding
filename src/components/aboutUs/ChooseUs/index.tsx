@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ComponentLayout from "@/components/shared/ComponentLayout";
 import Curve from "@/components/shared/Curve";

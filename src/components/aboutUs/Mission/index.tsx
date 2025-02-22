@@ -1,3 +1,4 @@
+"use client";
 import ComponentLayout from "@/components/shared/ComponentLayout";
 import { Typography } from "antd";
 import React from "react";

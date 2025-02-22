@@ -34,12 +34,14 @@ const Footer = () => {
       <div className="relative z-10">
         <Row gutter={[20, 20]} className="!m-0">
           <Col xs={24} lg={6} md={12}>
-            <Image
-              src={"/assets/images/logo.png"}
-              width={200}
-              height={200}
-              alt="Logo"
-            />
+            <Link href="/">
+              <Image
+                src={"/assets/images/logo.png"}
+                width={200}
+                height={200}
+                alt="Logo"
+              />
+            </Link>
           </Col>
 
           <Col xs={24} lg={6} md={12}>

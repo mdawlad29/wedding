@@ -1,3 +1,4 @@
+"use client";
 import ComponentLayout from "@/components/shared/ComponentLayout";
 import { Heading } from "@/components/shared/PageHeading";
 import Image from "next/image";
