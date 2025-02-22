@@ -100,12 +100,7 @@ const Contact = () => {
                 },
               ]}
             >
-              <Input.TextArea
-                showCount
-                maxLength={200}
-                rows={5}
-                className={`${inputDesign}`}
-              />
+              <Input.TextArea rows={5} className={`${inputDesign}`} />
             </Form.Item>
 
             <Form.Item>
