@@ -32,7 +32,7 @@ const HeroSection = () => {
           <motion.div
             initial={{ x: "100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 3, delay: 1, ease: "easeInOut" }}
             className="md:mb-4 mb-2"
           >
             <Typography.Text
@@ -45,7 +45,7 @@ const HeroSection = () => {
           <motion.div
             initial={{ x: "-100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 3, delay: 1, ease: "easeInOut" }}
             className="flex justify-center items-center flex-col"
           >
             <Typography.Title

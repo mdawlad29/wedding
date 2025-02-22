@@ -2,10 +2,16 @@ import { PageHeadingImg } from "@/components/shared/PageHeading";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 const images = [
-  "/assets/images/hero/hero.jpg",
-  "/assets/images/hero/hero-1.jpg",
-  "/assets/images/hero/hero-2.jpg",
-  "/assets/images/hero/hero-3.jpg",
+  "/assets/images/hero/slide-1.webp",
+  "/assets/images/hero/slide-2.webp",
+  "/assets/images/hero/slide-3.webp",
+  "/assets/images/hero/slide-4.webp",
+  "/assets/images/hero/slide-5.webp",
+  "/assets/images/hero/slide-6.png",
+  "/assets/images/hero/slide-7.png",
+  "/assets/images/hero/slide-8.png",
+  "/assets/images/hero/slide-9.png",
+  "/assets/images/hero/slide-10.png",
 ];
 
 const HeaderBackgroundImage = () => {
