@@ -9,7 +9,7 @@ const ServicePage = () => {
     <>
       <PremiumService />
       <Appointment />
-      <div className="mt-48">
+      <div className="lg:mt-48">
         <Testimonial />
       </div>
       <Faq />
