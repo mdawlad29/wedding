@@ -43,14 +43,11 @@ const Responsibility = () => {
 
           <ProgressBar skills={skillsData} />
 
-          <div className="text-center w-48 py-4 hover:bg-accent hover:-translate-y-2 duration-300 ease-in-out group bg-primary">
-            <Link
-              href={""}
-              className="!text-neutral group:hover:!text-primary text-xl capitalize font-semibold"
-            >
+          <Link href={"/about"}>
+            <p className="!text-neutral hover:!text-primary text-xl capitalize font-semibold text-center w-48 py-4 hover:bg-accent hover:-translate-y-2 duration-300 ease-in-out bg-primary">
               About Us
-            </Link>
-          </div>
+            </p>
+          </Link>
         </Col>
 
         <Col xs={24} md={24} lg={12}>

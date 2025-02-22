@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { Heading } from "@/components/shared/PageHeading";
 import ProgressBar from "@/components/shared/Progressbar";
+import Paragraph from "@/components/shared/Paragraph";
 
 const AboutUs = () => {
   const skillsData = [
@@ -32,33 +33,15 @@ const AboutUs = () => {
               subTitle="Welcome To The Best Catering Company"
             />
 
-            <p className="text-justify text-base leading-[24px] text-gray-700 md:my-5 my-6">
-              Bikaner Marwadi Caterers is a renowned catering service company
-              located in the vibrant city of Jaipur, India. Specializing in
-              authentic Marwadi cuisine, this company offers a wide range of
-              culinary services to meet the diverse needs of its clients. With a
-              focus on traditional flavors and innovative presentation, Bikaner
-              Marwadi Caterers is well-known for its delectable Rajasthani
-              dishes, including dal baati churma, gatte ki sabzi, and an array
-              of sweets like ghewar and malpua. Whether it’s a wedding,
-              corporate event, or a special celebration, this catering service
-              company prides itself on delivering top-quality food and
-              impeccable service to make every occasion a memorable and
-              delightful experience for their customers in the heart of Jaipur.
-            </p>
+            <Paragraph title="Raju Catering Services is a company located behind Kunhadi Police Station, Kota, Rajasthan 324008. Specializing in authentic vegetarian cuisine, we offer a wide range of culinary services to cater to the diverse needs of our clients. With a focus on traditional flavors and innovative presentation, Raju Catering Services is renowned for its delicious Rajasthani dishes, including dal baati churma, gatte ki sabzi, and a variety of sweets like ghewar and malpua.  " />
 
             <Typography.Text className="text-[20px] font-semibold text-accent leading-[24px] mb-5 block">
-              20 Years Experiences In This Business
+              10 Years of Experience in the Catering Business
             </Typography.Text>
 
             <ProgressBar skills={skillsData} />
 
-            <p className="text-justify text-base leading-[24px] text-gray-700 md:my-5 my-6">
-              Contact us today to start a culinary journey that will enchant
-              your senses and leave a lasting impression on your guests. Welcome
-              to the best catering company in Rajasthan, where every event
-              becomes a masterpiece of flavor, style, and tradition.
-            </p>
+            <Paragraph title="Whether it's a wedding, corporate event, or special celebration, we take pride in delivering top-quality food and impeccable service, ensuring that every occasion is a memorable and delightful experience for our customers in the heart of Rajasthan." />
           </div>
         </Col>
       </Row>

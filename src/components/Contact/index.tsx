@@ -201,7 +201,7 @@ const Contact = () => {
       <div className="relative w-full h-[80vh]">
         <iframe
           className="absolute inset-0 w-full h-full"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.825528098161!2d90.3813028!3d23.8705872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c40f82bd8f7b%3A0x8c888da8fc05ec94!2sSector%2012%2C%20Dhaka%201230!5e0!3m2!1sen!2sbd!4v1700000000000"
+          src="https://www.google.com/maps/place/Police+station/@25.1914726,75.8276438,17z/data=!3m1!4b1!4m6!3m5!1s0x396f9b14cdae77c1:0xd455833b01854d6b!8m2!3d25.1914678!4d75.8302187!16s%2Fg%2F124szjwtg?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

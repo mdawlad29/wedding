@@ -6,6 +6,7 @@ import { Col, Flex, Row, Typography } from "antd";
 import Link from "next/link";
 import { FaQuoteLeft } from "react-icons/fa";
 import ComponentLayout from "../shared/ComponentLayout";
+import Paragraph from "../shared/Paragraph";
 
 const imageData = [
   {
@@ -72,25 +73,27 @@ const SweetMemory = () => {
             </Typography.Title>
           </Flex>
 
-          <p className="text-justify text-base leading-[24px] text-gray-700 md:my-5 my-2">
-            “At Bikaner Marwadi Caterers, we believe that every occasion is an
+          <Paragraph
+            title=" “At Bikaner Marwadi Caterers, we believe that every occasion is an
             opportunity to create lasting memories and celebrate life’s special
             moments. Just like the cherished Indian tradition of ‘lawna,’ our
             catering service is a reflection of our gratitude to our valued
             clients and a way of sharing joy and happiness during your special
             events. We understand that our culinary creations play a vital role
             in enhancing the overall celebration, forging strong social bonds,
-            and leaving a sweet imprint on your heart.
-          </p>
+            and leaving a sweet imprint on your heart."
+          />
 
-          <p className="text-justify text-base leading-[24px] text-gray-700 mb-12">
-            Much like the sweet return gifts, our culinary offerings are a
+          <div className="md:mb-14 mb-7">
+            <Paragraph
+              title="Much like the sweet return gifts, our culinary offerings are a
             delightful part of the occasion, adding a touch of warmth and
             sweetness to your celebrations. With Bikaner Marwadi Caterers, you
             can count on us to not only provide delicious food but also create
             memorable culinary experiences that symbolize the enduring
-            connections formed during your event.”
-          </p>
+            connections formed during your event.”"
+            />
+          </div>
 
           <Link href={"/contact"}>
             <p className="text-center w-48 py-4 hover:bg-accent hover:-translate-y-2 duration-300 ease-in-out group bg-primary !text-neutral text-xl capitalize font-semibold">

@@ -49,13 +49,18 @@ const Testimonial = () => {
                     />
 
                     <p className="leading-[33px] md:text-[22px] text-[18px] font-normal text-gray-700 md:w-[465px] md:mb-6 mb-3 mx-auto text-center">
-                      Bikaner Marwadi Caterers elevated our wedding reception to
-                      an enchanting feast. The flavors were divine, and the
-                      presentation was a work of art
+                      {index === 0
+                        ? "Bikaner Marwadi Caterers elevated our wedding reception to an enchanting feast. The flavors were divine, and the presentation was a work of art"
+                        : "Our corporate event was a grand success thanks to Bikaner Marwadi Caterers. The cuisine was exceptional, and the service was impeccable."}
                     </p>
 
                     <strong className="text-[22px] font-semibold up capitalize !text-accent">
-                      maya & raj
+                      {index === 0 ? "maya & raj" : "amit"}
+                      {index === 1 && (
+                        <span className="text-primary text-xs capitalize block">
+                          business
+                        </span>
+                      )}
                     </strong>
                   </div>
                 ))}

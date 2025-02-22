@@ -6,6 +6,7 @@ import { Heading } from "@/components/shared/PageHeading";
 import { Col, Row } from "antd";
 import Image from "next/image";
 import ProgressBar from "@/components/shared/Progressbar";
+import Paragraph from "@/components/shared/Paragraph";
 
 const ChooseUs = () => {
   const skillsData = [
@@ -24,11 +25,11 @@ const ChooseUs = () => {
               subTitle="20 Years of Experience in Catering Company"
             />
 
-            <p className="text-base leading-[24px] text-gray-700 md:my-5 my-6">
-              Two decades of culinary expertise, passion, and creativity. Your
+            <Paragraph
+              title="Two decades of culinary expertise, passion, and creativity. Your
               events, our legacy. Bikaner Marwadi Caterers, redefining catering
-              for 20 years.
-            </p>
+              for 20 years."
+            />
 
             <ProgressBar skills={skillsData} />
           </Col>

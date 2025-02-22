@@ -4,6 +4,40 @@ import { Heading } from "@/components/shared/PageHeading";
 import React, { useRef } from "react";
 import ServiceCard from "../ServiceCard";
 import { useInView, motion } from "framer-motion";
+import Paragraph from "@/components/shared/Paragraph";
+
+const eventData = [
+  {
+    id: 1,
+    title: "Corporate Events",
+    desc: "Elevate your corporate experience with our tailored menus, exceptional service, and the rich flavors of Rajasthan. Make your event unforgettable with Raju Catering Services.",
+  },
+  {
+    id: 2,
+    title: "Wedding Events",
+    desc: "Creating unforgettable wedding moments with delectable menus and flawless service. Make your special day extraordinary with Raju Catering Services.",
+  },
+  {
+    id: 3,
+    title: "social events",
+    desc: "Enhance your social gatherings with our exquisite menus and exceptional service. Make every occasion a cherished celebration with Raju Catering Services.",
+  },
+  {
+    id: 4,
+    title: "private party",
+    desc: "Make your private gatherings extraordinary with our customized menus and exceptional service. Raju Catering Services ensures every occasion becomes a cherished celebration.",
+  },
+  {
+    id: 5,
+    title: "Birthday Events",
+    desc: "Celebrate birthdays in style with our delectable menus and flawless service. Raju Catering Services transforms every moment into a cherished memory.",
+  },
+  {
+    id: 6,
+    title: "Anniversary Events",
+    desc: "Honor love and togetherness with our customized menus and exceptional service. Raju Catering Services creates unforgettable moments for your special day.",
+  },
+];
 
 const PremiumService = () => {
   const ref = useRef(null);
@@ -18,11 +52,12 @@ const PremiumService = () => {
             subTitle="We Provide Premium Catering Services"
           />
 
-          <p className="text-base leading-[24px] text-gray-700 md:my-5 my-2 md:w-[540px]">
-            Indulge in the finest culinary experiences with our premium
+          <Paragraph
+            className="md:w-[540px] !text-center"
+            title="Indulge in the finest culinary experiences with our premium
             catering. From exquisite dishes to flawless service, Bikaner Marwadi
-            Caterers defines excellence.
-          </p>
+            Caterers defines excellence."
+          />
         </div>
 
         <motion.div
@@ -32,37 +67,13 @@ const PremiumService = () => {
           transition={{ duration: 2, ease: "easeInOut" }}
         >
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
-            {[...Array(6)].map((_, index) => (
+            {eventData.map((item, index) => (
               <ServiceCard
                 isActiveCard={index === 0 || index === 2 || index === 4}
                 key={index}
                 index={index}
-                title={
-                  index === 0
-                    ? "Corporate Events"
-                    : index === 1
-                    ? "Wedding Events"
-                    : index === 2
-                    ? "social events"
-                    : index === 3
-                    ? "private party"
-                    : index === 4
-                    ? "Birthday party"
-                    : "Anniversary Events"
-                }
-                description={
-                  index === 0
-                    ? "Elevate your corporate experience with our tailored menus, exceptional service, and the rich flavors of Rajasthan. Make your event unforgettable with Raju Catering Services."
-                    : index === 1
-                    ? "Creating unforgettable wedding moments with delectable menus and flawless service. Make your special day extraordinary with Raju Catering Services."
-                    : index === 2
-                    ? "Enhance your social gatherings with our exquisite menus and exceptional service. Make every occasion a cherished celebration with Raju Catering Services."
-                    : index === 3
-                    ? "Make your private gatherings extraordinary with our customized menus and exceptional service. Raju Catering Services ensures every occasion becomes a cherished celebration."
-                    : index === 4
-                    ? "Celebrate birthdays in style with our delectable menus and flawless service. Raju Catering Services transforms every moment into a cherished memory."
-                    : "Honor love and togetherness with our customized menus and exceptional service. Raju Catering Services creates unforgettable moments for your special day."
-                }
+                title={item?.title}
+                description={item?.desc}
                 btnLink=""
                 btnTitle="book now"
               />
