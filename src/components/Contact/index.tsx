@@ -198,10 +198,10 @@ const Contact = () => {
         </Link>
       </Flex>
 
-      <div className="relative w-full h-[80vh]">
+      <div className="relative w-full h-[80vh] overflow-hidden">
         <iframe
-          className="absolute inset-0 w-full h-full"
-          src="https://www.google.com/maps/place/Police+station/@25.1914726,75.8276438,17z/data=!3m1!4b1!4m6!3m5!1s0x396f9b14cdae77c1:0xd455833b01854d6b!8m2!3d25.1914678!4d75.8302187!16s%2Fg%2F124szjwtg?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
+          className="absolute top-0 left-0 w-full h-full border-0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14585.368848474897!2d75.8137403!3d25.2024909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f9b1318efb919%3A0xbe9a368ac3a48d03!2sKunadi%2C%20Electricity%20Board%20Area%2C%20Kota%2C%20Rajasthan%2C%20India!5e0!3m2!1sen!2sin!4v1709202241976"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
