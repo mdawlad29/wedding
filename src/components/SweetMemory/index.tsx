@@ -11,35 +11,31 @@ import Paragraph from "../shared/Paragraph";
 const imageData = [
   {
     id: 1,
-    image: "/assets/images/gallery/image-31.jpg",
+    image: "/assets/images/gallery/image-24.jpg",
   },
   {
     id: 2,
-    image: "/assets/images/gallery/image-32.jpg",
+    image: "/assets/images/gallery/image-25.jpg",
   },
   {
     id: 3,
-    image: "/assets/images/gallery/image-33.jpg",
+    image: "/assets/images/gallery/image-26.jpg",
   },
   {
     id: 4,
-    image: "/assets/images/gallery/image-37.jpg",
+    image: "/assets/images/gallery/image-31.jpg",
   },
   {
     id: 5,
-    image: "/assets/images/gallery/image-39.jpg",
+    image: "/assets/images/gallery/image-32.jpg",
   },
   {
     id: 6,
-    image: "/assets/images/gallery/image-42.jpg",
+    image: "/assets/images/gallery/image-36.jpg",
   },
   {
     id: 7,
-    image: "/assets/images/gallery/image-43.jpg",
-  },
-  {
-    id: 8,
-    image: "/assets/images/gallery/image-45.jpg",
+    image: "/assets/images/gallery/image-42.jpg",
   },
 ];
 

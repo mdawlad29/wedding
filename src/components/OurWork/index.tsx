@@ -20,7 +20,7 @@ const OurWork = () => {
       {/* Background Image with Overlay */}
       <div className="relative h-[270px] md:h-[430px] overflow-hidden">
         <Image
-          src="/assets/images/our-work-bg.jpg"
+          src="/assets/images/hero/our-work-bg.jpg"
           alt="Catering Background"
           layout="fill"
           objectFit="cover"

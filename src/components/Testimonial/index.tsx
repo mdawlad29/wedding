@@ -20,7 +20,7 @@ const Testimonial = () => {
       <Row gutter={[20, 20]} className="!m-0">
         <Col xs={24} md={24} lg={6}>
           <Image
-            src={"/assets/images/gallery/image-16.jpg"}
+            src={"/assets/images/gallery/image-33.jpg"}
             width={400}
             height={400}
             alt="Testimonial-image"
@@ -71,7 +71,7 @@ const Testimonial = () => {
 
         <Col xs={24} md={24} lg={6}>
           <Image
-            src={"/assets/images/gallery/image-9.jpg"}
+            src={"/assets/images/gallery/image-43.jpg"}
             width={400}
             height={400}
             alt="Testimonial-image"
