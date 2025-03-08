@@ -17,7 +17,7 @@ const Blog = () => {
         {/* Blog Image */}
         <div className="w-full md:w-1/3">
           <Image
-            src="/assets/images/gallery/image-46.jpg"
+            src="/assets/images/gallery/image-37.jpg"
             alt="Blog"
             width={300}
             height={300}

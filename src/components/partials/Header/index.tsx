@@ -44,7 +44,7 @@ const Header = () => {
           </Flex>
 
           {/* Logo */}
-          <Link href={"/"}>
+          <Link href={"/"} className="block">
             <Image
               src="/assets/images/logo.png"
               alt="logo"

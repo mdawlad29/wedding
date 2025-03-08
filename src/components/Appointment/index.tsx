@@ -11,7 +11,7 @@ const Appointment = () => {
         <div
           className="absolute inset-0 opacity-100 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/assets/images/gallery/image-9.jpg')`,
+            backgroundImage: `url('/assets/images/gallery/image-8.jpg')`,
           }}
         />
 

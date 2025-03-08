@@ -29,11 +29,11 @@ const HeaderBackgroundImage = () => {
   return (
     <div className="absolute inset-0">
       {pathname === "/gallery" ? (
-        <PageHeadingImg img="/assets/images/gallery/image-1.jpg" />
+        <PageHeadingImg img="/assets/images/hero/gallery-hero.jpg" />
       ) : pathname === "/contact" ? (
-        <PageHeadingImg img="/assets/images/contact-hero.jpg" />
+        <PageHeadingImg img="/assets/images/hero/contact-hero.jpg" />
       ) : pathname === "/services" ? (
-        <PageHeadingImg img="/assets/images/gallery/image-20.jpg" />
+        <PageHeadingImg img="/assets/images/gallery/image-18.jpg" />
       ) : pathname === "/about" ? (
         <PageHeadingImg img="/assets/images/about/about-hero.jpg" />
       ) : (
