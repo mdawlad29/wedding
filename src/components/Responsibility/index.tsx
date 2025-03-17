@@ -55,7 +55,7 @@ const Responsibility = () => {
             <Experience />
 
             <Image
-              src={"/assets/images/gallery/image-46.jpg"}
+              src={"/assets/images/gallery/image-37.jpg"}
               alt={"about-image"}
               width={300}
               height={300}
@@ -64,14 +64,14 @@ const Responsibility = () => {
 
             <div className="space-y-4">
               <Image
-                src={"/assets/images/gallery/image-38.jpg"}
+                src={"/assets/images/gallery/image-33.jpg"}
                 alt={"about-image"}
                 width={200}
                 height={200}
                 className="lg:w-[300px] w-full h-[200px] object-cover"
               />
               <Image
-                src={"/assets/images/gallery/image-55.jpg"}
+                src={"/assets/images/gallery/image-43.jpg"}
                 alt={"about-image"}
                 width={200}
                 height={200}
