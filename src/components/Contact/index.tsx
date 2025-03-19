@@ -7,7 +7,7 @@ import { BsBuildings } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 import { FiPhoneCall } from "react-icons/fi";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 
 const greatVibes = Great_Vibes({
   weight: "400",
@@ -187,14 +187,6 @@ const Contact = () => {
           className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-primary !text-neutral hover:bg-accent duration-700 ease-in-out transform hover:scale-110"
         >
           <FaFacebookF />
-        </Link>
-
-        <Link
-          href={"https://www.instagram.com/jtdddut/"}
-          target="_blank"
-          className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-primary !text-neutral hover:bg-accent duration-700 ease-in-out transform hover:scale-110"
-        >
-          <FaInstagram />
         </Link>
       </Flex>
 

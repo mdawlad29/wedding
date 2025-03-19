@@ -3,7 +3,7 @@ import { Flex, Typography } from "antd";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import { Great_Vibes } from "next/font/google";
 import Curve from "../shared/Curve";
 import { usePathname } from "next/navigation";
@@ -69,14 +69,6 @@ const HeroSection = () => {
               className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-neutral !text-primary duration-500 ease-in-out transform hover:scale-110"
             >
               <FaFacebookF />
-            </Link>
-
-            <Link
-              href={"https://www.instagram.com/jtdddut/"}
-              target="_blank"
-              className="w-9 h-9 flex justify-center items-center rounded-full text-xl bg-neutral !text-primary duration-500 ease-in-out transform hover:scale-110"
-            >
-              <FaInstagram />
             </Link>
           </Flex>
         </>
